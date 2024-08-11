@@ -34,7 +34,7 @@ The sales table captures all customer_id level purchases with an corresponding o
 |C          |2021-01-01|3         |
 |C          |2021-01-07|3         |
 
-#### Table 2: menu 🥘 
+#### Table 2: menu 🍜 
 The menu table maps the product_id to the actual product_name and price of each menu item.
 
 |product_id |product_name|price     |
