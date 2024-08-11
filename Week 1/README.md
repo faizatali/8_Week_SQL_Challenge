@@ -1,14 +1,17 @@
 ## 🍜 Case Study 1 - Danny's Diner
 
-[Introduction](#-introduction) &nbsp;
-[Problem Statement](#-problem-statement) &nbsp;
-[Datasets](#-datasets) &nbsp;
-[Case Study Questions](#-case-study-questions) &nbsp;
-[Solutions](#-solutions) &nbsp;
-[Bonus Questions](#-bonus-questions) 
-
 <img src="https://github.com/user-attachments/assets/14ef2ee3-d616-4ea3-92ac-e1296a52b33a" width="400"/> &nbsp;
 <img src="https://github.com/user-attachments/assets/54d48561-e1e5-4887-97f8-6a2121c684ff" width="402"/>
+
+<br>
+
+### 📖 Table of Contents 
+- [Introduction](#-introduction) &nbsp;
+- [Problem Statement](#-problem-statement) &nbsp;
+- [Datasets](#-datasets) &nbsp;
+- [Case Study Questions](#-case-study-questions) &nbsp;
+- [Solutions](#-solutions) &nbsp;
+- [Bonus Questions](#-bonus-questions) 
 
 <br>
 
