@@ -11,7 +11,7 @@
 [Problem Statement](#problem_statement)
 [Datasets](#datasets)
 [Case Study Questions](#case_study_questions)
-[Solutions](#💡_solutions)
+[Solutions](#this_is_commented_out)
 [Bonus Questions](#bonus_questions)
 
   <br>
@@ -93,6 +93,7 @@ Each of the following case study questions can be answered using a single SQL st
 
 <br>
 
+<!-- This is commented out. -->
 ### 💡 Solutions 
 
 <br>
