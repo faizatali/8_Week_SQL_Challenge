@@ -15,6 +15,8 @@ Danny has provided you with a sample of his overall customer data due to privacy
 ### Datasets
 All datasets exist within the dannys_diner database schema - be sure to include this reference within your SQL scripts as you start exploring the data and answering the case study questions.
 
+<img width="557" alt="Screenshot 2024-08-10 at 11 55 41 PM" src="https://github.com/user-attachments/assets/5fe4f816-583b-407f-a000-f8b0b472320c">
+
 #### Table 1: sales 💵
 The sales table captures all customer_id level purchases with an corresponding order_date and product_id information for when and what menu items were ordered.
 
@@ -74,5 +76,9 @@ The following questions are related creating basic data tables that Danny and hi
 
 Recreate the following table output using the available data:
 
+<img width="593" alt="bonus_question_1" src="https://github.com/user-attachments/assets/18d622ba-fa0e-40cb-b25a-30b6f87ed3bb">
+
 2. Rank All The Things -
 Danny also requires further information about the ranking of customer products, but he purposely does not need the ranking for non-member purchases so he expects null ranking values for the records when customers are not yet part of the loyalty program.
+
+<img width="685" alt="bonus_question_2" src="https://github.com/user-attachments/assets/9b62266d-494a-4458-918b-3524ace6e07f">
