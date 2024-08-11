@@ -7,12 +7,12 @@
 <br>
 
 ### 📖 Table of Contents
-[Introduction](#-introduction)
-[Problem Statement](#-problem_statement)
-[Datasets](#-datasets)
-[Case Study Questions](#-case_study_questions)
-[Solutions](#-solutions)
-[Bonus Questions](#-bonus_questions)
+- [Introduction](#-introduction)
+- [Problem Statement](#-problem_statement)
+- [Datasets](#-datasets)
+- [Case Study Questions](#-case_study_questions)
+- [Solutions](#-solutions)
+- [Bonus Questions](#-bonus_questions)
 
   <br>
   
@@ -94,7 +94,6 @@ Each of the following case study questions can be answered using a single SQL st
 
 <br>
 
-<!-- This is commented out. -->
 ### 💡 Solutions 
 
 <br>
