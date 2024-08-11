@@ -1,11 +1,11 @@
 ## 🍜 Case Study 1 - Danny's Diner
 
-[Introduction](#-introduction)
-[Problem Statement](#-problem-statement)
-[Datasets](#-datasets)
-[Case Study Questions](#-case-study-questions)
-[Solutions](#-solutions)
-[Bonus Questions](#-bonus-questions)
+[Introduction](#-introduction) &nbsp;
+[Problem Statement](#-problem-statement) &nbsp;
+[Datasets](#-datasets) &nbsp;
+[Case Study Questions](#-case-study-questions) &nbsp;
+[Solutions](#-solutions) &nbsp;
+[Bonus Questions](#-bonus-questions) 
 
 <br>
 
