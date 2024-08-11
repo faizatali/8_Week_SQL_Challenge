@@ -1,4 +1,11 @@
-![1](https://github.com/user-attachments/assets/14ef2ee3-d616-4ea3-92ac-e1296a52b33a)
+## [8-Week SQL Challenge](https://github.com/ndleah/8-Week-SQL-Challenge) 
+
+
+## 🍜 Case Study #1 - Danny's Diner
+
+
+<img src="https://github.com/user-attachments/assets/14ef2ee3-d616-4ea3-92ac-e1296a52b33a" width="600"/>
+
 
 ### Introduction 
 Danny seriously loves Japanese food so in the beginning of 2021, he decides to embark upon a risky venture and opens up a cute little restaurant that sells his 3 favourite foods: sushi, curry and ramen.
