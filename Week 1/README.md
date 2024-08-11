@@ -11,11 +11,13 @@
 [Problem Statement](#problem_statement)
 [Datasets](#datasets)
 [Case Study Questions](#case_study_questions)
-[Solutions](#this_is_commented_out)
+[Solutions](#solutions)
 [Bonus Questions](#bonus_questions)
+[Modules 📦](#modules-%F0%9F%93%A6)
 
   <br>
-
+  
+### 1
 ### ✨ Introduction 
 Danny seriously loves Japanese food so in the beginning of 2021, he decides to embark upon a risky venture and opens up a cute little restaurant that sells his 3 favourite foods: sushi, curry and ramen.
 
@@ -97,6 +99,8 @@ Each of the following case study questions can be answered using a single SQL st
 ### 💡 Solutions 
 
 <br>
+
+###Modules 📦
 
 ### 🚀 Bonus Questions
 
