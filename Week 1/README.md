@@ -7,8 +7,6 @@
 [Solutions](#-solutions) &nbsp;
 [Bonus Questions](#-bonus-questions) 
 
-<br>
-
 <img src="https://github.com/user-attachments/assets/14ef2ee3-d616-4ea3-92ac-e1296a52b33a" width="400"/> &nbsp;
 <img src="https://github.com/user-attachments/assets/54d48561-e1e5-4887-97f8-6a2121c684ff" width="402"/>
 
