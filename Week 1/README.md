@@ -7,16 +7,15 @@
 <br>
 
 ### 📖 Table of Contents
-- [Introduction](#-introduction)
-- [Problem Statement](#-problem_statement)
-- [Datasets](#-datasets)
-- [Case Study Questions](#-case-study-questions)
-- [Solutions](#-solutions)
-- [Bonus Questions](#-bonus-questions)
+1. [Introduction](#-introduction)
+2. [Problem Statement](#-problem-statement)
+3. [Datasets](#-datasets)
+4. [Case Study Questions](#-case-study-questions)
+5. [Solutions](#-solutions)
+6. [Bonus Questions](#-bonus-questions)
 
-  <br>
+<br>
   
-### 1
 ### ✨ Introduction 
 Danny seriously loves Japanese food so in the beginning of 2021, he decides to embark upon a risky venture and opens up a cute little restaurant that sells his 3 favourite foods: sushi, curry and ramen.
 
