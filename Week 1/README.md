@@ -10,9 +10,9 @@
 - [Introduction](#-introduction)
 - [Problem Statement](#-problem_statement)
 - [Datasets](#-datasets)
-- [Case Study Questions](#-case_study_questions)
+- [Case Study Questions](#-case-study-questions)
 - [Solutions](#-solutions)
-- [Bonus Questions](#-bonus_questions)
+- [Bonus Questions](#-bonus-questions)
 
   <br>
   
