@@ -1,32 +1,33 @@
-## [8-Week SQL Challenge](https://github.com/ndleah/8-Week-SQL-Challenge) 
+## 🍜 Case Study 1 - Danny's Diner
 
 
-## 🍜 Case Study #1 - Danny's Diner
+<img src="https://github.com/user-attachments/assets/14ef2ee3-d616-4ea3-92ac-e1296a52b33a" width="400"/> &nbsp;
+<img src="https://github.com/user-attachments/assets/54d48561-e1e5-4887-97f8-6a2121c684ff" width="402"/>
 
+<br>
 
-<img src="https://github.com/user-attachments/assets/14ef2ee3-d616-4ea3-92ac-e1296a52b33a" width="600"/>
-
-
-### Introduction 
+### ✨ Introduction 
 Danny seriously loves Japanese food so in the beginning of 2021, he decides to embark upon a risky venture and opens up a cute little restaurant that sells his 3 favourite foods: sushi, curry and ramen.
 
 Danny’s Diner is in need of your assistance to help the restaurant stay afloat - the restaurant has captured some very basic data from their few months of operation but have no idea how to use their data to help them run the business.
 
-![image](https://github.com/user-attachments/assets/729d59b2-6f00-4ab5-bb89-8b9b91e5a27c)
+<br>
 
-### Problem Statement
+### 🛠️ Problem Statement
 Danny wants to use the data to answer a few simple questions about his customers, especially about their visiting patterns, how much money they’ve spent and also which menu items are their favourite. Having this deeper connection with his customers will help him deliver a better and more personalised experience for his loyal customers.
 
 He plans on using these insights to help him decide whether he should expand the existing customer loyalty program - additionally he needs help to generate some basic datasets so his team can easily inspect the data without needing to use SQL.
 
 Danny has provided you with a sample of his overall customer data due to privacy issues - but he hopes that these examples are enough for you to write fully functioning SQL queries to help him answer his questions!
 
-### Datasets
+<br>
+
+### 📈 Datasets
 All datasets exist within the dannys_diner database schema - be sure to include this reference within your SQL scripts as you start exploring the data and answering the case study questions.
 
 <img width="557" alt="Screenshot 2024-08-10 at 11 55 41 PM" src="https://github.com/user-attachments/assets/5fe4f816-583b-407f-a000-f8b0b472320c">
 
-#### Table 1: sales 💵
+#### Table 1: sales 
 The sales table captures all customer_id level purchases with an corresponding order_date and product_id information for when and what menu items were ordered.
 
 |customer_id|order_date|product_id|
@@ -47,7 +48,7 @@ The sales table captures all customer_id level purchases with an corresponding o
 |C          |2021-01-01|3         |
 |C          |2021-01-07|3         |
 
-#### Table 2: menu 🍣 
+#### Table 2: menu  
 The menu table maps the product_id to the actual product_name and price of each menu item.
 
 |product_id |product_name|price     |
@@ -56,7 +57,7 @@ The menu table maps the product_id to the actual product_name and price of each 
 |2          |curry       |15        |
 |3          |ramen       |12        |
 
-#### Table 3: members 👱🏼‍♀️
+#### Table 3: members 
 The final members table captures the join_date when a customer_id joined the beta version of the Danny’s Diner loyalty program.
 
 |customer_id|join_date |
@@ -64,7 +65,9 @@ The final members table captures the join_date when a customer_id joined the bet
 |A          |1/7/2021  |
 |B          |1/9/2021  |
 
-### Case Study Questions
+<br>
+
+### 📑 Case Study Questions
 Each of the following case study questions can be answered using a single SQL statement:
 
 1. What is the total amount each customer spent at the restaurant?
@@ -78,16 +81,22 @@ Each of the following case study questions can be answered using a single SQL st
 9. If each $1 spent equates to 10 points and sushi has a 2x points multiplier - how many points would each customer have?
 10. In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January?
 
-### Bonus Questions
+<br>
 
-1. Join All The Things - 
+### 💡 Solutions 
+
+<br>
+
+### 🚀 Bonus Questions
+
+#### Join All The Things 
 The following questions are related creating basic data tables that Danny and his team can use to quickly derive insights without needing to join the underlying tables using SQL.
 
 Recreate the following table output using the available data:
 
-<img width="593" alt="bonus_question_1" src="https://github.com/user-attachments/assets/18d622ba-fa0e-40cb-b25a-30b6f87ed3bb">
+<img width="430" alt="bonus_question_1" src="https://github.com/user-attachments/assets/18d622ba-fa0e-40cb-b25a-30b6f87ed3bb"><br>
 
-2. Rank All The Things -
+#### Rank All The Things 
 Danny also requires further information about the ranking of customer products, but he purposely does not need the ranking for non-member purchases so he expects null ranking values for the records when customers are not yet part of the loyalty program.
 
-<img width="685" alt="bonus_question_2" src="https://github.com/user-attachments/assets/9b62266d-494a-4458-918b-3524ace6e07f">
+<img width="500" alt="bonus_question_2" src="https://github.com/user-attachments/assets/9b62266d-494a-4458-918b-3524ace6e07f">
