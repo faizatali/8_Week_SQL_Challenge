@@ -9,7 +9,7 @@
 ### 📖 Table of Contents
 
 [Introduction](#-introduction)
-[Problem Statement](#-problem-statement)
+[Problem Statement](#--problem-statement)
 [Datasets](#-datasets)
 [Case Study Questions](#-case-study-questions)
 [Solutions](#-solutions)
