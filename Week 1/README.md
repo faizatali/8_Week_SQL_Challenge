@@ -13,7 +13,7 @@
 [Case Study Questions](#case_study_questions)
 [Solutions](#solutions)
 [Bonus Questions](#bonus_questions)
-[Modules](#modules-)
+[Modules](#-modules)
 
   <br>
   
@@ -100,7 +100,7 @@ Each of the following case study questions can be answered using a single SQL st
 
 <br>
 
-### Modules 📦
+### 📦 Modules 
 
 ### 🚀 Bonus Questions
 
