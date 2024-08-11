@@ -11,7 +11,7 @@
 [Problem Statement](#problem_statement)
 [Datasets](#datasets)
 [Case Study Questions](#case_study_questions)
-[Solutions](#💡solutions)
+[Solutions](#💡_solutions)
 [Bonus Questions](#bonus_questions)
 
   <br>
