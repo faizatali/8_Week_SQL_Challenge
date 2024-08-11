@@ -12,6 +12,8 @@ Danny seriously loves Japanese food so in the beginning of 2021, he decides to e
 
 Danny’s Diner is in need of your assistance to help the restaurant stay afloat - the restaurant has captured some very basic data from their few months of operation but have no idea how to use their data to help them run the business.
 
+![image](https://github.com/user-attachments/assets/729d59b2-6f00-4ab5-bb89-8b9b91e5a27c)
+
 ### Problem Statement
 Danny wants to use the data to answer a few simple questions about his customers, especially about their visiting patterns, how much money they’ve spent and also which menu items are their favourite. Having this deeper connection with his customers will help him deliver a better and more personalised experience for his loyal customers.
 
@@ -45,7 +47,7 @@ The sales table captures all customer_id level purchases with an corresponding o
 |C          |2021-01-01|3         |
 |C          |2021-01-07|3         |
 
-#### Table 2: menu 🍜 
+#### Table 2: menu 🍣 
 The menu table maps the product_id to the actual product_name and price of each menu item.
 
 |product_id |product_name|price     |
