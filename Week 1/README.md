@@ -13,7 +13,7 @@
 [Case Study Questions](#case_study_questions)
 [Solutions](#solutions)
 [Bonus Questions](#bonus_questions)
-[Modules](#modules-%F0%9F%93%A6)
+[Modules](#modules-)
 
   <br>
   
