@@ -1,13 +1,5 @@
 ## 🍜 Case Study 1 - Danny's Diner
 
-
-<img src="https://github.com/user-attachments/assets/14ef2ee3-d616-4ea3-92ac-e1296a52b33a" width="400"/> &nbsp;
-<img src="https://github.com/user-attachments/assets/54d48561-e1e5-4887-97f8-6a2121c684ff" width="402"/>
-
-<br>
-
-### 📖 Table of Contents
-
 [Introduction](#-introduction)
 [Problem Statement](#-problem-statement)
 [Datasets](#-datasets)
@@ -16,7 +8,12 @@
 [Bonus Questions](#-bonus-questions)
 
 <br>
-  
+
+<img src="https://github.com/user-attachments/assets/14ef2ee3-d616-4ea3-92ac-e1296a52b33a" width="400"/> &nbsp;
+<img src="https://github.com/user-attachments/assets/54d48561-e1e5-4887-97f8-6a2121c684ff" width="402"/>
+
+<br>
+
 ### ✨ Introduction 
 Danny seriously loves Japanese food so in the beginning of 2021, he decides to embark upon a risky venture and opens up a cute little restaurant that sells his 3 favourite foods: sushi, curry and ramen.
 
