@@ -100,7 +100,7 @@ Each of the following case study questions can be answered using a single SQL st
 
 <br>
 
-###Modules 📦
+### Modules 📦
 
 ### 🚀 Bonus Questions
 
