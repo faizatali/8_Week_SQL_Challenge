@@ -8,6 +8,11 @@
 
 ### 📖 Table of Contents
 - [Introduction](#introduction)
+- [Problem Statement](#problem_statement)
+- [Datasets](#datasets)
+- [Case Study Questions](#case_study_questions)
+- [Solutions](#solutions)
+- [Bonus Questions](#bonus_questions)
 
   <br>
 
