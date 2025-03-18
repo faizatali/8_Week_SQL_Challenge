@@ -1,6 +1,6 @@
 ## Case Study 1 - Danny's Diner 🍜 
 
-**Table Structures**
+### Table Structures**
 
 Members:
 | Field        | Type       | Null | Key | Default |
