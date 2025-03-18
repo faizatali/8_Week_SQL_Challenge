@@ -1,34 +1,30 @@
 ## Case Study 1 - Danny's Diner 🍜 
 
-### Table Structures
+**Table Structures**
 
-| Tables_in_dannys_diner |
-|------------------------|
-| members                |
-| menu                   |
-| sales                  |
+Members:
+| Field        | Type       | Null | Key | Default |
+|--------------|------------|------|-----|---------|
+| customer_id  | varchar(1) | YES  |     | NULL    |       
+| join_date    | date       | YES  |     | NULL    |       
 
-| Field       | Type       | Null | Key | Default | Extra |
-|-------------|------------|------|-----|---------|-------|
-| customer_id | varchar(1) | YES  |     | NULL    |       |
-| join_date   | date       | YES  |     | NULL    |       |
+Menu:
+| Field        | Type       | Null | Key | Default | 
+|--------------|------------|------|-----|---------|
+| product_id   | int        | YES  |     | NULL    |       
+| product_name | varchar(5) | YES  |     | NULL    |       
+| price        | int        | YES  |     | NULL    |      
 
-
-| Field        | Type       | Null | Key | Default | Extra |
-|--------------|------------|------|-----|---------|-------|
-| product_id   | int        | YES  |     | NULL    |       |
-| product_name | varchar(5) | YES  |     | NULL    |       |
-| price        | int        | YES  |     | NULL    |       |
-
-| Field       | Type       | Null | Key | Default | Extra |
-|-------------|------------|------|-----|---------|-------|
-| customer_id | varchar(1) | YES  |     | NULL    |       |
-| order_date  | date       | YES  |     | NULL    |       |
-| product_id  | int        | YES  |     | NULL    |       |
+Sales:
+| Field        | Type       | Null | Key | Default | 
+|--------------|------------|------|-----|---------|
+| customer_id  | varchar(1) | YES  |     | NULL    |       
+| order_date   | date       | YES  |     | NULL    |       
+| product_id   | int        | YES  |     | NULL    |     
 
 ### Case Study Questions
 
-#### 1. What is the total amount each customer spent at the restaurant?
+#### 📌 1. What is the total amount each customer spent at the restaurant?
 
 SQL Query:
 ```sql
@@ -53,7 +49,7 @@ Output:
 | B           | 74          |
 | C           | 36          |
 
-**<span style="color:lightblue;">Answer:</span>**
+**Answer:**
 
 Customer A spent $76, customer B spent $74, and customer C spent $36.
 
