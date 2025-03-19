@@ -36,3 +36,15 @@ WHERE
         SELECT MIN(order_date)
         FROM sales 
         WHERE customer_id = s.customer_id);
+
+
+-- Query 4: What is the most purchased item on the menu and how many times was it purchased by all customers?
+SELECT 
+    m.product_name,
+    COUNT(s.order_date) as total_purchased
+FROM menu m
+JOIN sales s
+ON m.product_id = s.product_id
+GROUP BY m.product_name
+ORDER BY COUNT(s.order_date) DESC
+LIMIT 1;

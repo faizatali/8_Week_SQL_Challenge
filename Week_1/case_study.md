@@ -117,6 +117,32 @@ Customer A ordered sushi and curry, customer B ordered curry, and lastly custome
 
 #### 📌 4. What is the most purchased item on the menu and how many times was it purchased by all customers?
 
+SQL Query:
+
+```sql
+SELECT 
+    m.product_name,
+    COUNT(s.order_date) as total_purchased
+FROM menu m
+JOIN sales s
+ON m.product_id = s.product_id
+GROUP BY m.product_name
+ORDER BY COUNT(s.order_date) DESC
+LIMIT 1;
+```
+
+Output:
+
+| product_name | total_purchased |
+|--------------|-----------------|
+| ramen        | 8               |
+
+**Answer:**
+
+The most purchased item on the menu was ramen, which was purchased 8 times.
+
+<br>
+
 #### 📌 5. Which item was the most popular for each customer?
 
 #### 📌 6. Which item was purchased first by the customer after they became a member?
