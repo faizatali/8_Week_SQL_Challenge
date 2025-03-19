@@ -145,6 +145,53 @@ The most purchased item on the menu was ramen, which was purchased 8 times.
 
 #### 📌 5. Which item was the most popular for each customer?
 
+SQL Query:
+
+```sql
+SELECT
+    n.customer_id,
+    m.product_name,
+    n.purchase_count
+FROM (
+    SELECT 
+        s.customer_id, 
+        s.product_id, 
+        COUNT(*) AS purchase_count
+    FROM sales s
+    GROUP BY s.customer_id, s.product_id) 
+AS n
+JOIN menu m
+ON n.product_id = m.product_id
+WHERE 
+    n.purchase_count = (
+        SELECT MAX(sub.purchase_count)
+        FROM (
+            SELECT 
+                s.customer_id, 
+                s.product_id, 
+                COUNT(*) AS purchase_count
+            FROM sales s
+            GROUP BY s.customer_id, s.product_id) 
+        AS sub
+        WHERE sub.customer_id = n.customer_id)
+ORDER BY n.customer_id;
+```
+Output: 
+
+| customer_id | product_name | purchase_count |
+|-------------|--------------|----------------|
+| A           | ramen        | 3              |
+| B           | sushi        | 2              |
+| B           | curry        | 2              |
+| B           | ramen        | 2              |
+| C           | ramen        | 3              |
+
+**Answer:**
+
+Customer A and C's most purchased item was ramen, while customer B purchased sushi, curry, and ramen equally
+
+<br>
+
 #### 📌 6. Which item was purchased first by the customer after they became a member?
 
 #### 📌 7. Which item was purchased just before the customer became a member?

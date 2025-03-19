@@ -48,3 +48,32 @@ ON m.product_id = s.product_id
 GROUP BY m.product_name
 ORDER BY COUNT(s.order_date) DESC
 LIMIT 1;
+
+-- Query 5: Which item was the most popular for each customer?
+SELECT
+    n.customer_id,
+    m.product_name,
+    n.purchase_count
+FROM (
+    SELECT 
+        s.customer_id, 
+        s.product_id, 
+        COUNT(*) AS purchase_count
+    FROM sales s
+    GROUP BY s.customer_id, s.product_id) 
+AS n
+JOIN menu m
+ON n.product_id = m.product_id
+WHERE 
+    n.purchase_count = (
+        SELECT MAX(sub.purchase_count)
+        FROM (
+            SELECT 
+                s.customer_id, 
+                s.product_id, 
+                COUNT(*) AS purchase_count
+            FROM sales s
+            GROUP BY s.customer_id, s.product_id) 
+        AS sub
+        WHERE sub.customer_id = n.customer_id)
+ORDER BY n.customer_id;
