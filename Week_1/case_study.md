@@ -34,14 +34,10 @@ SQL Query:
 SELECT 
     s.customer_id,
     SUM(m.price) AS total_spent
-FROM 
-    sales s
-JOIN 
-    menu m
-ON 
-    s.product_id = m.product_id
-GROUP BY 
-    s.customer_id;
+FROM sales s
+JOIN menu m
+ON s.product_id = m.product_id
+GROUP BY s.customer_id;
 ```
 
 Output:
@@ -66,10 +62,8 @@ SQL Query:
 SELECT 
     customer_id, 
     COUNT(*) AS total_visits
-FROM 
-    sales
-GROUP BY 
-    customer_id;
+FROM sales
+GROUP BY customer_id;
 ```
 
 Output:
@@ -84,7 +78,42 @@ Output:
 
 Customer A and B each visited the resturant 6 times, while customer C visited 3 times. 
 
+<br>
+
 #### 📌 3. What was the first item from the menu purchased by each customer?
+
+SQL Query:
+
+```sql
+SELECT 
+    s.customer_id, 
+    s.order_date, 
+    m.product_name
+FROM sales s
+JOIN menu m
+ON s.product_id = m.product_id
+WHERE 
+    s.order_date = (
+        SELECT MIN(order_date)
+        FROM sales 
+        WHERE customer_id = s.customer_id);
+```
+
+Output:
+
+| customer_id | order_date  | product_name |
+|-------------|-------------|--------------|
+| A           | 2021-01-01  | sushi        |
+| A           | 2021-01-01  | curry        |
+| B           | 2021-01-01  | curry        |
+| C           | 2021-01-01  | ramen        |
+| C           | 2021-01-01  | ramen        |
+
+**Answer:**
+
+Customer A ordered sushi and curry, customer B ordered curry, and lastly customer C ordered ramen bowls.
+
+<br>
 
 #### 📌 4. What is the most purchased item on the menu and how many times was it purchased by all customers?
 
