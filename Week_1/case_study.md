@@ -22,6 +22,8 @@ Sales:
 | order_date   | date       | YES  |     | NULL    |       
 | product_id   | int        | YES  |     | NULL    |     
 
+<br>
+
 ### Case Study Questions
 
 #### 📌 1. What is the total amount each customer spent at the restaurant?
@@ -53,6 +55,8 @@ Output:
 **Answer:**
 
 Customer A spent $76, customer B spent $74, and customer C spent $36.
+
+<br>
 
 #### 📌 2. How many days has each customer visited the restaurant?
 
