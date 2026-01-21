@@ -77,3 +77,20 @@ WHERE
         AS sub
         WHERE sub.customer_id = n.customer_id)
 ORDER BY n.customer_id;
+
+-- Query 6: Which item was purchased first by the customer after they became a member?
+SELECT
+    s.customer_id, 
+    s.order_date, 
+    m.product_name
+FROM sales s 
+JOIN members mem
+ON s.customer_id = mem.customer_id
+JOIN menu m
+ON s.product_id = m.product_id
+WHERE s.order_date = (
+    SELECT MIN(sub.order_date)
+    FROM sales sub
+    WHERE sub.customer_id = s.customer_id
+    AND sub.order_date >= mem.join_date)
+ORDER BY s.customer_id;

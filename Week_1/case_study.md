@@ -30,167 +30,25 @@ Sales:
 
 SQL Query:
 
-```sql
-SELECT 
-    s.customer_id,
-    SUM(m.price) AS total_spent
-FROM sales s
-JOIN menu m
-ON s.product_id = m.product_id
-GROUP BY s.customer_id;
-```
+x
 
 Output:
 
-| customer_id | total_sales |
-| ----------- | ----------- |
-| A           | 76          |
-| B           | 74          |
-| C           | 36          |
+x
 
 **Answer:**
 
-Customer A spent $76, customer B spent $74, and customer C spent $36.
+x
 
 <br>
 
 #### 📌 2. How many days has each customer visited the restaurant?
 
-SQL Query:
-
-```sql
-SELECT 
-    customer_id, 
-    COUNT(*) AS total_visits
-FROM sales
-GROUP BY customer_id;
-```
-
-Output:
-
-| customer_id | total_visits |
-|-------------|--------------|
-| A           | 6            |
-| B           | 6            |
-| C           | 3            |
-
-**Answer:**
-
-Customer A and B each visited the resturant 6 times, while customer C visited 3 times. 
-
-<br>
-
 #### 📌 3. What was the first item from the menu purchased by each customer?
-
-SQL Query:
-
-```sql
-SELECT 
-    s.customer_id, 
-    s.order_date, 
-    m.product_name
-FROM sales s
-JOIN menu m
-ON s.product_id = m.product_id
-WHERE 
-    s.order_date = (
-        SELECT MIN(order_date)
-        FROM sales 
-        WHERE customer_id = s.customer_id);
-```
-
-Output:
-
-| customer_id | order_date  | product_name |
-|-------------|-------------|--------------|
-| A           | 2021-01-01  | sushi        |
-| A           | 2021-01-01  | curry        |
-| B           | 2021-01-01  | curry        |
-| C           | 2021-01-01  | ramen        |
-| C           | 2021-01-01  | ramen        |
-
-**Answer:**
-
-Customer A ordered sushi and curry, customer B ordered curry, and lastly customer C ordered ramen bowls.
-
-<br>
 
 #### 📌 4. What is the most purchased item on the menu and how many times was it purchased by all customers?
 
-SQL Query:
-
-```sql
-SELECT 
-    m.product_name,
-    COUNT(s.order_date) as total_purchased
-FROM menu m
-JOIN sales s
-ON m.product_id = s.product_id
-GROUP BY m.product_name
-ORDER BY COUNT(s.order_date) DESC
-LIMIT 1;
-```
-
-Output:
-
-| product_name | total_purchased |
-|--------------|-----------------|
-| ramen        | 8               |
-
-**Answer:**
-
-The most purchased item on the menu was ramen, which was purchased 8 times.
-
-<br>
-
 #### 📌 5. Which item was the most popular for each customer?
-
-SQL Query:
-
-```sql
-SELECT
-    n.customer_id,
-    m.product_name,
-    n.purchase_count
-FROM (
-    SELECT 
-        s.customer_id, 
-        s.product_id, 
-        COUNT(*) AS purchase_count
-    FROM sales s
-    GROUP BY s.customer_id, s.product_id) 
-AS n
-JOIN menu m
-ON n.product_id = m.product_id
-WHERE 
-    n.purchase_count = (
-        SELECT MAX(sub.purchase_count)
-        FROM (
-            SELECT 
-                s.customer_id, 
-                s.product_id, 
-                COUNT(*) AS purchase_count
-            FROM sales s
-            GROUP BY s.customer_id, s.product_id) 
-        AS sub
-        WHERE sub.customer_id = n.customer_id)
-ORDER BY n.customer_id;
-```
-Output: 
-
-| customer_id | product_name | purchase_count |
-|-------------|--------------|----------------|
-| A           | ramen        | 3              |
-| B           | sushi        | 2              |
-| B           | curry        | 2              |
-| B           | ramen        | 2              |
-| C           | ramen        | 3              |
-
-**Answer:**
-
-Customer A and C's most purchased item was ramen, while customer B purchased sushi, curry, and ramen equally
-
-<br>
 
 #### 📌 6. Which item was purchased first by the customer after they became a member?
 
