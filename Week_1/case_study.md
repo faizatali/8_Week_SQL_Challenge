@@ -48,7 +48,7 @@ Output:
 ```
 
 **Answer:** Customer A spent $76, Customer B spent $74, and Customer C spent $36.
-<br>
+<br><br>
 
 #### 📌 2. How many days has each customer visited the restaurant?
 
