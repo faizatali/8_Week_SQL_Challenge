@@ -37,6 +37,8 @@ GROUP BY customer_id;
 ```
 
 Output:
+
+```SQL
 +-------------+-------------+
 | customer_id | total_spent |
 +-------------+-------------+
@@ -45,8 +47,10 @@ Output:
 | C           |          36 |
 +-------------+-------------+
 3 rows in set (0.00 sec)
+```
 
 **Answer:**
+
 Customer A spent $76, Customer B spent $74, and Customer C spent $36.
 <br>
 
