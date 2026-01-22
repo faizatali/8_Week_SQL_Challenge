@@ -106,6 +106,29 @@ Output:
 
 #### 📌 4. What is the most purchased item on the menu and how many times was it purchased by all customers?
 
+SQL Query:
+```sql
+SELECT m.product_name, COUNT(s.product_id) AS total_orders
+FROM sales s 
+JOIN menu m ON s.product_id = m.product_id
+GROUP BY m.product_name
+ORDER BY total_orders DESC
+LIMIT 1;
+```
+
+Output:
+```sql
++--------------+--------------+
+| product_name | total_orders |
++--------------+--------------+
+| ramen        |            8 |
++--------------+--------------+
+1 row in set (0.00 sec)
+```
+
+**Answer:** The most purchased item is ramen, which was ordered 8 times.
+<br><br>
+
 #### 📌 5. Which item was the most popular for each customer?
 
 #### 📌 6. Which item was purchased first by the customer after they became a member?
