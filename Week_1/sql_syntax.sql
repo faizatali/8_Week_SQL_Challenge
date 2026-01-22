@@ -6,12 +6,14 @@ DESCRIBE menu;
 DESCRIBE sales;
 
 -- Query 1: What is the total amount each customer spent at the restaurant?
-
 SELECT customer_id, SUM(price) AS total_spent
 FROM sales JOIN menu ON sales.product_id = menu.product_id
 GROUP BY customer_id;
 
 -- Query 2: How many days has each customer visited the restaurant?
+SELECT customer_id, COUNT(DISTINCT order_date) AS num_days_visited
+FROM sales
+GROUP BY customer_id;
 
 -- Query 3: What was the first item from the menu purchased by each customer?
 

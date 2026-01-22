@@ -29,16 +29,14 @@ Sales:
 #### 📌 1. What is the total amount each customer spent at the restaurant?
 
 SQL Query:
-
-```SQL
+```sql
 SELECT customer_id, SUM(price) AS total_spent
 FROM sales JOIN menu ON sales.product_id = menu.product_id
 GROUP BY customer_id;
 ```
 
 Output:
-
-```SQL
+```sql
 +-------------+-------------+
 | customer_id | total_spent |
 +-------------+-------------+
@@ -49,12 +47,32 @@ Output:
 3 rows in set (0.00 sec)
 ```
 
-**Answer:**
-
-Customer A spent $76, Customer B spent $74, and Customer C spent $36.
+**Answer:** Customer A spent $76, Customer B spent $74, and Customer C spent $36.
 <br>
 
 #### 📌 2. How many days has each customer visited the restaurant?
+
+SQL Query:
+```sql
+SELECT customer_id, COUNT(DISTINCT order_date) AS num_days_visited
+FROM sales
+GROUP BY customer_id;
+```
+
+Output:
+```sql
++-------------+------------------+
+| customer_id | num_days_visited |
++-------------+------------------+
+| A           |                4 |
+| B           |                6 |
+| C           |                2 |
++-------------+------------------+
+3 rows in set (0.01 sec)
+```
+
+**Answer:** Customer A visited 4 times, Customer B visited 6 times, and Customer C visited 2 times.
+<br>
 
 #### 📌 3. What was the first item from the menu purchased by each customer?
 
