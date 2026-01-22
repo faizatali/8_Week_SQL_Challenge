@@ -30,16 +30,24 @@ Sales:
 
 SQL Query:
 
-x
+```SQL
+SELECT customer_id, SUM(price) AS total_spent
+FROM sales JOIN menu ON sales.product_id = menu.product_id
+GROUP BY customer_id;
+```
 
 Output:
-
-x
++-------------+-------------+
+| customer_id | total_spent |
++-------------+-------------+
+| A           |          76 |
+| B           |          74 |
+| C           |          36 |
++-------------+-------------+
+3 rows in set (0.00 sec)
 
 **Answer:**
-
-x
-
+Customer A spent $76, Customer B spent $74, and Customer C spent $36.
 <br>
 
 #### 📌 2. How many days has each customer visited the restaurant?

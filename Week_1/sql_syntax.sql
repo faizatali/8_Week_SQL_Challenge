@@ -7,84 +7,24 @@ DESCRIBE sales;
 
 -- Query 1: What is the total amount each customer spent at the restaurant?
 
-
-
--- Query 2: How many days has each customer visited the restaurant?
-SELECT 
-    customer_id, 
-    COUNT(*) AS total_visits
-FROM sales
+SELECT customer_id, SUM(price) AS total_spent
+FROM sales JOIN menu ON sales.product_id = menu.product_id
 GROUP BY customer_id;
 
+-- Query 2: How many days has each customer visited the restaurant?
 
 -- Query 3: What was the first item from the menu purchased by each customer?
-SELECT 
-    s.customer_id, 
-    s.order_date, 
-    m.product_name
-FROM sales s
-JOIN menu m
-ON s.product_id = m.product_id
-WHERE 
-    s.order_date = (
-        SELECT MIN(order_date)
-        FROM sales 
-        WHERE customer_id = s.customer_id);
-
 
 -- Query 4: What is the most purchased item on the menu and how many times was it purchased by all customers?
-SELECT 
-    m.product_name,
-    COUNT(s.order_date) as total_purchased
-FROM menu m
-JOIN sales s
-ON m.product_id = s.product_id
-GROUP BY m.product_name
-ORDER BY COUNT(s.order_date) DESC
-LIMIT 1;
 
 -- Query 5: Which item was the most popular for each customer?
-SELECT
-    n.customer_id,
-    m.product_name,
-    n.purchase_count
-FROM (
-    SELECT 
-        s.customer_id, 
-        s.product_id, 
-        COUNT(*) AS purchase_count
-    FROM sales s
-    GROUP BY s.customer_id, s.product_id) 
-AS n
-JOIN menu m
-ON n.product_id = m.product_id
-WHERE 
-    n.purchase_count = (
-        SELECT MAX(sub.purchase_count)
-        FROM (
-            SELECT 
-                s.customer_id, 
-                s.product_id, 
-                COUNT(*) AS purchase_count
-            FROM sales s
-            GROUP BY s.customer_id, s.product_id) 
-        AS sub
-        WHERE sub.customer_id = n.customer_id)
-ORDER BY n.customer_id;
 
 -- Query 6: Which item was purchased first by the customer after they became a member?
-SELECT
-    s.customer_id, 
-    s.order_date, 
-    m.product_name
-FROM sales s 
-JOIN members mem
-ON s.customer_id = mem.customer_id
-JOIN menu m
-ON s.product_id = m.product_id
-WHERE s.order_date = (
-    SELECT MIN(sub.order_date)
-    FROM sales sub
-    WHERE sub.customer_id = s.customer_id
-    AND sub.order_date >= mem.join_date)
-ORDER BY s.customer_id;
+
+-- Query 7: Which item was purchased just before the customer became a member?
+
+-- Query 8: What is the total items and amount spent for each member before they became a member?
+
+-- Query 9: If each $1 spent equates to 10 points and sushi has a 2x points multiplier - how many points would each customer have?
+
+-- Query 10: In the first week after a customer joins the program (including their join date) they earn 2x points on all items, not just sushi - how many points do customer A and B have at the end of January?
