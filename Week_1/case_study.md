@@ -47,7 +47,7 @@ Output:
 3 rows in set (0.00 sec)
 ```
 
-**Answer:** Customer A spent $76, Customer B spent $74, and Customer C spent $36.
+**Answer:** Customer A spent $76, customer B spent $74, and customer C spent $36.
 <br><br>
 
 #### 📌 2. How many days has each customer visited the restaurant?
@@ -71,10 +71,38 @@ Output:
 3 rows in set (0.01 sec)
 ```
 
-**Answer:** Customer A visited 4 times, Customer B visited 6 times, and Customer C visited 2 times.
-<br>
+**Answer:** Customer A visited 4 times, customer B visited 6 times, and customer C visited 2 times.
+<br><br>
 
 #### 📌 3. What was the first item from the menu purchased by each customer?
+
+SQL Query:
+```sql
+SELECT s.customer_id, s.order_date AS first_purchase, m.product_name
+FROM sales s
+JOIN menu m ON s.product_id = m.product_id
+WHERE (s.customer_id, s.order_date) IN (
+    SELECT customer_id, MIN(order_date)
+    FROM sales
+    GROUP BY customer_id);
+```
+
+Output:
+```sql
++-------------+----------------+--------------+
+| customer_id | first_purchase | product_name |
++-------------+----------------+--------------+
+| A           | 2021-01-01     | sushi        |
+| A           | 2021-01-01     | curry        |
+| B           | 2021-01-01     | curry        |
+| C           | 2021-01-01     | ramen        |
+| C           | 2021-01-01     | ramen        |
++-------------+----------------+--------------+
+5 rows in set (0.00 sec)
+```
+
+**Answer:** Customer A's first order was sushi and curry, customer B's first order was curry, and customer C's first order was ramen. 
+<br><br>
 
 #### 📌 4. What is the most purchased item on the menu and how many times was it purchased by all customers?
 
