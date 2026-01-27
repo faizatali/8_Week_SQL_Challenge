@@ -127,9 +127,12 @@ Output:
 ```
 
 **Answer:** The most purchased item is ramen, which was ordered 8 times.
-<br><br>
+<br><br> 
 
 #### 📌 5. Which item was the most popular for each customer?
+
+SQL Query:
+```sql
 
 #### 📌 6. Which item was purchased first by the customer after they became a member?
 
