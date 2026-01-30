@@ -133,7 +133,7 @@ Output:
 
 SQL Query:
 ```sql
-SELECT customer_id, product_name, COUNT(*) AS total_orders
+
 
 #### 📌 6. Which item was purchased first by the customer after they became a member?
 
