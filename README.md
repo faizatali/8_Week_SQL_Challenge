@@ -1,4 +1,4 @@
-This repository contains all of my solutions and work from the [8-Week SQL Challenge](https://8weeksqlchallenge.com/) by Data With Danny..
+This repository contains all of my solutions and work from the [8-Week SQL Challenge](https://8weeksqlchallenge.com/) by Data With Danny.
 The focus of this project is to learn the fundamentals of SQL data analysis and solve realistic end-to-end case studies across multiple domains.
 
 ## 📁 Repository Structure
