@@ -7,9 +7,9 @@ The focus of this project is to learn the fundamentals of SQL data analysis and 
 ```
 8-Week-SQL-Challenge/
 ├── Week-01/
+│   ├── README.md
 │   ├── case_study.md
 │   ├── dannys_diner_schema.sql
-│   ├── README.md
 │   └── sql_syntax.sql
 ├── Week-02/
 ├── Week-03/
