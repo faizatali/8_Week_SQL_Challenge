@@ -133,7 +133,7 @@ Output:
 
 SQL Query:
 ```sql
-
+```
 
 #### 📌 6. Which item was purchased first by the customer after they became a member?
 
